@@ -69,3 +69,6 @@ Essential properties include:
 * hash: A sha256 hash taken from the content of the block.
 It is like a unique identifier of the block. We use block hashes to preserve integrity of the block and to explicitly reference the previous block. The deeper the block is in the blockchain, the harder it is to modify it, since it would require modifications to every consecutive block.
 * previousHash: A reference to the hash of the previous block. This value explicitly defines the previous block.
+
+### 2.  Proof of Work Algorithm (Mining)
+With Proof-of-work we introduce a computational puzzle that needs to be solved, before a block can be added to the blockchain. Trying to solve this puzzle is commonly known as “mining”. Generally in cryptocurrencies, the miner is rewarded for finding a block. The Proof-of-work puzzle is to find a block hash, that has a specific number of zeros prefixing it.
